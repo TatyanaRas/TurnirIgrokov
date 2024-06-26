@@ -1,27 +1,16 @@
 //import jdk.internal.jimage.ImageStrings;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
 
 public class Game {
-    ArrayList<Player> players = new ArrayList<>();//храним игроков в виде списков
-    private Player player;
-  //  Map players= new HashMap();
-
- //   HashMap<String, String> map = new HashMap<>();
-
-
-/* for (String name : map.player()) {
-     String value = map.get(name);
-    }*/
+    List<Player> players = new ArrayList<>();//храним игроков в виде списков
 
     //метод регистрации игрока
     public void register(Player player) {
-       players.add(player);
-       // players.put(player.getName(), player);
-        }
-  //  }
+        players.add(player);
+
+    }
 
     //метод соревнования
     public int round(String playerName1, String playerName2) {
